@@ -17,7 +17,7 @@ const Subscribe = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="input rounded-2xl w-full py-5 p"
+              className="input rounded-2xl w-full py-6"
             />
 
             <button className="p-[3px] relative cursor-pointer">

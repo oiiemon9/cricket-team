@@ -1,6 +1,7 @@
 import React, { Suspense, useState } from 'react';
 import AvailablePlayers from './AvailablePlayers';
 import Selected from './Selected';
+import Loader from '../Loader/Loader';
 
 const dataPromises = fetch('./players.json').then((res) => res.json());
 
@@ -36,7 +37,7 @@ const ChosePlayer = ({ availableCoin, setAvailableCoin }) => {
         </div>
       </div>
       {availablePage === 'available' && (
-        <Suspense fallback={<p>Data Loading...</p>}>
+        <Suspense fallback={<Loader></Loader>}>
           <AvailablePlayers
             dataPromises={dataPromises}
             selectedPlayers={selectedPlayers}

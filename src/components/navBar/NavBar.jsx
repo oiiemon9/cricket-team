@@ -50,7 +50,7 @@ const NavBar = ({ availableCoin }) => {
 
         <div className="navbar-end gap-5">
           <div className=" hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 text-gray-600 gap-5">
+            <ul className="menu menu-horizontal px-1 text-gray-600 gap-5 flex-nowrap">
               <li>
                 <a>Home</a>
               </li>

@@ -3,6 +3,8 @@ import './App.css';
 import ChosePlayer from './components/chosePlayer/ChosePlayer';
 import NavBar from './components/navBar/NavBar';
 import HeroSection from './components/heroSection/HeroSection';
+import Subscribe from './components/Subscribe/Subscribe';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [availableCoin, setAvailableCoin] = useState(100000000);
@@ -14,6 +16,8 @@ function App() {
         availableCoin={availableCoin}
         setAvailableCoin={setAvailableCoin}
       ></ChosePlayer>
+      <Subscribe></Subscribe>
+      <Footer></Footer>
     </>
   );
 }

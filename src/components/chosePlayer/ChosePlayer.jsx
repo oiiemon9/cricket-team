@@ -10,8 +10,8 @@ const ChosePlayer = ({ availableCoin, setAvailableCoin }) => {
 
   return (
     <div className="max-w-[1420px] mx-auto px-2 mt-[88px]">
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-4xl font-bold">
+      <div className="flex flex-col-reverse md:flex-row gap-2 justify-between items-center mb-8">
+        <h2 className="text-xl sm:text-4xl font-bold">
           {availablePage === 'available'
             ? 'Available Players'
             : `Selected Player (${selectedPlayers.length}/6)`}

@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div>
           <img src={CricketImg} alt="" />
         </div>
-        <h1 className="text-4xl font-bold text-white text-center">
+        <h1 className="text-2xl md:text-4xl font-bold text-white text-center">
           Assemble Your Ultimate Dream 11 Cricket Team
         </h1>
         <p className="text-lg font-medium text-gray-500">

@@ -68,7 +68,8 @@ const NavBar = ({ availableCoin }) => {
 
           <div className="border px-4 py-2 rounded border-gray-300 bg-gray-100">
             <p className="font-bold flex gap-2">
-              <span>{availableCoin}</span> Coin
+              <span>{availableCoin}</span>{' '}
+              <span className="hidden md:flex">Coin</span>
               <BsCoin className="text-2xl text-yellow-500" />
             </p>
           </div>

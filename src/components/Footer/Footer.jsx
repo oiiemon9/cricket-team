@@ -10,7 +10,7 @@ const Footer = () => {
               <img src={logo} alt="" />
             </div>
           </div>
-          <div className="mt-16 flex gap-5">
+          <div className="mt-16 flex flex-col md:flex-row gap-5">
             <div className="flex-1">
               <h4 className="text-lg font-medium text-white">About Us</h4>
               <p className="max-w-[291px] text-gray-500">

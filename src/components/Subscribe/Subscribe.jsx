@@ -13,18 +13,15 @@ const Subscribe = () => {
           <p className="text-lg font-medium text-gray-500">
             Get the latest updates and news right in your inbox!
           </p>
-          <div className="flex gap-5 max-w-[560px] w-full h-full">
+          <div className="flex flex-col md:flex-row gap-5 max-w-[560px] w-full h-full">
             <input
               type="email"
               placeholder="Enter your email"
               className="input rounded-2xl w-full py-6"
             />
 
-            <button className="p-[3px] relative cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl" />
-              <div className="px-8 h-full bg-black rounded-[14px]  relative group transition duration-200 text-white hover:bg-transparent text-nowrap flex justify-center items-center">
-                Subscribe
-              </div>
+            <button className="px-8 py-2 rounded-xl bg-gradient-to-b from-yellow-500 to-yellow-600 text-white focus:ring-2 focus:ring-yellow-400 hover:shadow-xl transition duration-200">
+              Subscribe
             </button>
           </div>
         </div>

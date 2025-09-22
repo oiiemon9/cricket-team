@@ -4,7 +4,7 @@ import { BsCoin } from 'react-icons/bs';
 
 const NavBar = ({ availableCoin }) => {
   return (
-    <div className="max-w-[1420px] mx-auto">
+    <div className="max-w-[1420px] mx-auto px-2">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">

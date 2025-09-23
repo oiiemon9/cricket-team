@@ -3,7 +3,7 @@ import bg from '../../assets/bgImg.png';
 
 const Subscribe = () => {
   return (
-    <div className="max-w-[1420px] mx-auto px-2 mt-48 relative">
+    <div className="max-w-[1420px] mx-auto px-2 mt-28 md:mt-48 relative">
       <div className=" bg-white/10 p-6 rounded-2xl -mb-52 border border-white/30">
         <div
           style={{ backgroundImage: `url(${bg})` }}

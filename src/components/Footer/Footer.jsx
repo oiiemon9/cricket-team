@@ -3,7 +3,7 @@ import logo from '../../assets/logo-footer.png';
 const Footer = () => {
   return (
     <div className="bg-[#06091A]">
-      <div className="max-w-[1420px] mx-auto px-2 pt-28 md:pt-60">
+      <div className="max-w-[1420px] mx-auto px-2 pt-60">
         <div>
           <div className="flex justify-center">
             <div>

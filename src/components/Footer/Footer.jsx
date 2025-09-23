@@ -20,22 +20,20 @@ const Footer = () => {
             </div>
             <div className="flex-1">
               <h4 className="text-lg font-medium text-white">Quick Links</h4>
-              <p className="max-w-[291px] text-gray-500">
-                <ul className="list-disc ms-5 space-y-2">
-                  <li>
-                    <a href="">Home</a>
-                  </li>
-                  <li>
-                    <a href="">Services</a>
-                  </li>
-                  <li>
-                    <a href="">About</a>
-                  </li>
-                  <li>
-                    <a href="">Contact</a>
-                  </li>
-                </ul>
-              </p>
+              <ul className="list-disc ms-5 space-y-2 max-w-[291px] text-gray-500">
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">Services</a>
+                </li>
+                <li>
+                  <a href="">About</a>
+                </li>
+                <li>
+                  <a href="">Contact</a>
+                </li>
+              </ul>
             </div>
             <div className="flex-1">
               <h4 className="text-lg font-medium text-white">About Us</h4>

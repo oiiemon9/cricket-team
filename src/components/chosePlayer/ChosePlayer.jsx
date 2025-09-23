@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import AvailablePlayers from './AvailablePlayers';
 import Selected from './Selected';
 import Loader from '../Loader/Loader';
@@ -8,7 +8,6 @@ const dataPromises = fetch('./players.json').then((res) => res.json());
 const ChosePlayer = ({ availableCoin, setAvailableCoin }) => {
   const [availablePage, setAvailablePage] = useState('available');
   const [selectedPlayers, setSelectedPlayers] = useState([]);
-
   return (
     <div className="max-w-[1420px] mx-auto px-2 mt-[88px]">
       <div className="flex flex-col-reverse md:flex-row gap-2 justify-between items-center mb-8">

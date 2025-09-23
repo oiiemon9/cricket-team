@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FaUserAlt } from 'react-icons/fa';
 import { IoFlagSharp } from 'react-icons/io5';
 import { ToastContainer, toast } from 'react-toastify';
+import { addLocalStorage } from '../../utils/playerLocalStorage/PlayerLocalStorage';
+import { addCoinLocalStorage } from '../../utils/coinLocalStorage/CoinLocalStorage';
 
 const player = ({
   player,
@@ -25,7 +27,7 @@ const player = ({
   useEffect(() => {
     const isSelected = selectedPlayers.some((sePl) => sePl.id === id);
     setSelected(isSelected);
-  }, [id]);
+  }, [selectedPlayers, id]);
 
   const handelSelected = (p) => {
     if (selectedPlayers.length >= 6) {
@@ -44,17 +46,25 @@ const player = ({
     setSelected(true);
     const newSelectedPlayers = [...selectedPlayers, p];
     setSelectedPlayers(newSelectedPlayers);
+    addLocalStorage(p.id);
+
+    addCoinLocalStorage(remainingCoin);
   };
   return (
     <div>
       <ToastContainer position="bottom-right" />
       <div className="border border-gray-300 rounded-md p-5 h-full">
-        <div className="">
+        <div className="relative">
           <img
             className="w-full h-72 object-cover object-top rounded-md  bg-gray-200"
             src={image}
             alt=""
           />
+          {selected && (
+            <p className="absolute top-3 right-3 bg-green-500 rounded-2xl px-4 py-1 text-sm text-white">
+              Selected
+            </p>
+          )}
         </div>
         <div className="mt-6 space-y-3">
           <div className="flex items-center gap-2">

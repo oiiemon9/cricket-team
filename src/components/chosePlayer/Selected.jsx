@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdDeleteForever } from 'react-icons/md';
 import { IoWarningOutline } from 'react-icons/io5';
+import { removeLocalStorage } from '../../utils/playerLocalStorage/PlayerLocalStorage';
+import { addCoinLocalStorage } from '../../utils/coinLocalStorage/CoinLocalStorage';
 
 const Selected = ({
   selectedPlayers,
@@ -18,6 +20,8 @@ const Selected = ({
     setSelectedPlayers(newPlayer);
     const newCoin = availableCoin + parseInt(deletePlayer.price);
     setAvailableCoin(newCoin);
+    removeLocalStorage(deletePlayer.id);
+    addCoinLocalStorage(newCoin);
   };
 
   return (

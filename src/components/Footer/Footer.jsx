@@ -3,7 +3,7 @@ import logo from '../../assets/logo-footer.png';
 const Footer = () => {
   return (
     <div className="bg-[#06091A]">
-      <div className="max-w-[1420px] mx-auto px-2 pt-60">
+      <div className="max-w-[1420px] mx-auto px-2 pt-28 md:pt-60">
         <div>
           <div className="flex justify-center">
             <div>
@@ -36,7 +36,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex-1">
-              <h4 className="text-lg font-medium text-white">About Us</h4>
+              <h4 className="text-lg font-medium text-white">Subscribe</h4>
               <p className="max-w-[291px] text-gray-500">
                 Subscribe to our newsletter for the latest updates.
               </p>
